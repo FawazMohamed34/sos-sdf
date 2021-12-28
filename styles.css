@@ -1,5 +1,21 @@
+.title {
+  height: 250px;
+  background: #FDCEA9;
+  margin: 48px -48px 1em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
 body {
   background: #84A583;
+}
+
+.myNav {
+  margin-bottom: -5px;
 }
 
 .event {
@@ -8,6 +24,7 @@ body {
 
 header {
   background: rgba(83, 77, 77, 0.56);
+  height: 90px;
 }
 
 header .donation {
@@ -23,14 +40,14 @@ header .donation {
   height: 250px;
 }
 
-h1 {
-  background: rgba(27, 26, 26, 0.95);
-}
-
 main .parallax {
-  background: url(images/parallax.jpg) no-repeat cover;
+  background: url(images/parallax.jpg);
   height: 500px;
   background-attachment: fixed;
+}
+
+main .parallax h1 {
+  background: rgba(27, 26, 26, 0.95);
 }
 
 @media (min-width: 768px) {
@@ -49,5 +66,21 @@ main .parallax {
     background-size: cover;
     background-attachment: fixed;
   }
+}
+
+.myAlert {
+  background-color: #EA495F;
+}
+
+.myAlert:hover {
+  background: #e8374f;
+}
+
+.foot {
+  margin: 10px -48px -50px;
+}
+
+.foot-xs {
+  margin: -10px -48px;
 }
 /*# sourceMappingURL=styles.css.map */
