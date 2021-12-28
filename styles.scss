@@ -5,10 +5,23 @@ $red :#EA495F;
 $md: 768px;
 $lg:992px;
 
+%title-presentation{
+  height:250px;
+  background: $brand-color;
+ }
+
+
 body{
   background: $bg-neutre;
 
 }
+.myNav{
+  margin-bottom: -5px;
+}
+  .title{
+  @extend %title-presentation;
+  }
+
 @mixin btn-radius{
   border-radius: 3rem;
 }
@@ -16,29 +29,48 @@ body{
 .event{
   background: darken($brand-color,4%);
 }
+
+
 header{
   background: $dark-transparent;
+  height: 90px;
 
 .donation{
     background: $red;
     @include btn-radius;
   }
+
+  a {
+    color: white;
+    text-decoration: none;
+     &:hover{
+       background-color: $brand-color;
+       color:black;
+     }
+  }
 }
+
+.myNavigation{
+  padding: 0.5rem 1rem;
+  padding-left: 0;
+  display: block;
+}
+
 .brand{
   background: $brand-color;
 }
 .block{
   height: 250px;
 }
-h1{
-  background: rgba(27, 26, 26,0.95)
 
-}
 main{
 .parallax {
-  background: url(images/parallax.jpg)no-repeat cover;
+  background: url(images/parallax.jpg);
   height: 500px;
   background-attachment: fixed;
+  h1{
+    background: rgba(27, 26, 26,0.95);
+  }
 @media(min-width: $md) {
     background: url(images/parallax-md.jpg);
     height: 600px;
@@ -54,5 +86,27 @@ main{
       background-attachment: fixed;
     }  
   }
+}
+.myAlert{
+  background-color: $red;
   
+  &:hover{
+    background: darken($red, 4%);
+  }
+}
+
+
+.link{
+  background-color: lighten($red,20%);
+}
+
+.hover:hover{
+  transform: scale(1.1);
+}
+.hover-link:hover{
+  background-color: $brand-color;
+}
+
+.cursor{
+  cursor: not-allowed;
 }
