@@ -1,24 +1,50 @@
-
+$bg-neutre : #84A583;
+$dark-transparent : rgba(83, 77, 77, 0.56);
+$brand-color : #FDCEA9;
+$red :#EA495F;
 $md: 768px;
 $lg:992px;
+
+body{
+  background: $bg-neutre;
+
+}
+@mixin btn-radius{
+  border-radius: 3rem;
+}
+
+.event{
+  background: darken($brand-color,4%);
+}
+header{
+  background: $dark-transparent;
+
+.donation{
+    background: $red;
+    @include btn-radius;
+  }
+}
+.brand{
+  background: $brand-color;
+}
+.block{
+  height: 250px;
+}
+h1{
+  background: rgba(27, 26, 26,0.95)
+
+}
 main{
-  
 .parallax {
-
-  background: url(images/parallax.jpg)no-repeat;
+  background: url(images/parallax.jpg)no-repeat cover;
   height: 500px;
-  background-size: cover;
   background-attachment: fixed;
-  padding: 0;
-  margin: 0;
-
 @media(min-width: $md) {
-    background: url(images/parallax-m.jpg);
+    background: url(images/parallax-md.jpg);
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
-    padding: 0;
-    margin: 0
+
   }
 
     @media(min-width: $lg) {
@@ -26,8 +52,7 @@ main{
       height: 600px;
       background-size: cover;
       background-attachment: fixed;
-      padding: 0;
-      margin: 0
-  }  
+    }  
   }
+  
 }
