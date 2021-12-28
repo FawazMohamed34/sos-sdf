@@ -1,31 +1,53 @@
+body {
+  background: #84A583;
+}
+
+.event {
+  background: #fdc395;
+}
+
+header {
+  background: rgba(83, 77, 77, 0.56);
+}
+
+header .donation {
+  background: #EA495F;
+  border-radius: 3rem;
+}
+
+.brand {
+  background: #FDCEA9;
+}
+
+.block {
+  height: 250px;
+}
+
+h1 {
+  background: rgba(27, 26, 26, 0.95);
+}
+
 main .parallax {
-  background: url(images/parallax.jpg) no-repeat;
+  background: url(images/parallax.jpg) no-repeat cover;
   height: 500px;
-  background-size: cover;
   background-attachment: fixed;
-  padding: 0;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
   main .parallax {
-    background: url(images/parallax-m.jpg);
+    background: url(images/parallax-md.jpg);
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
-    padding: 0;
-    margin: 0;
   }
 }
 
 @media (min-width: 992px) {
   main .parallax {
-    background: url(./images/parallax-lg.jpg) 30% 70%;
+    background: url(./images/parallax-lg.jpg) 30% 95%;
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
-    padding: 0;
-    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
