@@ -1,0 +1,31 @@
+main .parallax {
+  background: url(images/parallax.jpg) no-repeat;
+  height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  main .parallax {
+    background: url(images/parallax-m.jpg);
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  main .parallax {
+    background: url(./images/parallax-lg.jpg) 30% 70%;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
