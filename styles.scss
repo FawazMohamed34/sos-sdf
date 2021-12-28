@@ -1,8 +1,8 @@
 
 $md: 768px;
 $lg:992px;
-
 main{
+  
 .parallax {
 
   background: url(images/parallax.jpg)no-repeat;
@@ -22,7 +22,7 @@ main{
   }
 
     @media(min-width: $lg) {
-      background: url(./images/parallax-lg.jpg) 30% 70%;
+      background: url(./images/parallax-lg.jpg) 30% 95%;
       height: 600px;
       background-size: cover;
       background-attachment: fixed;

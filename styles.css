@@ -20,7 +20,7 @@ main .parallax {
 
 @media (min-width: 992px) {
   main .parallax {
-    background: url(./images/parallax-lg.jpg) 30% 70%;
+    background: url(./images/parallax-lg.jpg) 30% 95%;
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
