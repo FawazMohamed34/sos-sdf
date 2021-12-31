@@ -1,16 +1,13 @@
-$bg-neutre : #84A583;
-$dark-transparent : rgba(83, 77, 77, 0.56);
-$brand-color : #FDCEA9;
-$red :#EA495F;
-$md: 768px;
-$lg:992px;
+@import 'variables';
 
 %title-presentation{
   height:250px;
   background: $brand-color;
  }
 
-
+main{
+  z-index: 1;
+}
 body{
   background: $bg-neutre;
 
@@ -26,11 +23,14 @@ body{
   border-radius: 3rem;
 }
 
-.event{
+.brand-bg-darken
+{
   background: darken($brand-color,4%);
 }
 
-
+a {
+  text-decoration: none;;
+}
 header{
   background: $dark-transparent;
   height: 90px;
@@ -40,20 +40,15 @@ header{
     @include btn-radius;
   }
 
-  a {
-    color : white ;
-    text-decoration: none;
+  a{
+    font-size: calc(1.5rem + .6vw);
+    color:white;
      &:hover{
        color: $brand-color;
      }
   }
 }
 
-.myNavigation{
-  padding: 0.5rem 1rem;
-  padding-left: 0;
-  display: block;
-}
 
 .brand{
   background: $brand-color;
@@ -64,22 +59,26 @@ header{
 
 main{
 .parallax {
-  background: url(images/parallax.jpg);
+  background: url(images/sansabri.jpg) no-repeat left bottom;
+  background-size: cover;
   height: 500px;
   background-attachment: fixed;
   h1{
     background: rgba(27, 26, 26,0.95);
   }
-@media(min-width: $md) {
-    background: url(images/parallax-md.jpg);
+@media screen and (min-width: $sm){
+  background: url(images/sansabri-sm.jpg) left;
+}
+@media screen and (min-width: $md) {
+    background: url(images/sansabri-md.jpg)left bottom;
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
 
   }
 
-    @media(min-width: $lg) {
-      background: url(./images/parallax-lg.jpg) 30% 95%;
+    @media screen and (min-width: $lg) {
+      background: url(images/sansabri-lg.jpg) bottom;
       height: 600px;
       background-size: cover;
       background-attachment: fixed;
@@ -87,13 +86,13 @@ main{
   }
 }
 .myAlert{
-  background-color: $red;
+  @include btn-radius;
+  background-color: darken($red,20%);
   
   &:hover{
     background: darken($red, 4%);
   }
 }
-
 
 .link{
   background-color: lighten($red,20%);
@@ -103,5 +102,52 @@ main{
   transform: scale(1.1);
 }
 .hover-link:hover{
-  transform: scale(1.4);
+  transform: scale(1.1);
+  background: $brand-color;
+}
+
+
+.myNavbarCollapse{
+  @media(max-width : 880px){
+    z-index: 2;
+    background: $dark-transparent;
+    margin-top: 12px;
+
+    }
+}
+
+  .myNavigation{
+    padding: 0.5rem 1rem;
+    padding-left: 0;
+    display: block;
+  @media(max-width: 880px){
+  font-weight: bold;
+  margin-bottom: 40px;
+  &:hover{
+    box-shadow: rgba(46, 38, 38, 0.582) 5px 9px 5px;
+    color: rgb(41, 36, 36);
+    }
+  }
+}
+
+.event {
+  background: #fdc89f;
+}
+
+.footer-end{
+color: white;
+font-size: 0.8rem;
+}
+
+.bg-endFooter{
+  background-color: #333333;
+}
+
+.btn-event{
+  @include btn-radius;
+  background: seagreen;
+  color : white;
+}
+.mytitle-card{
+  color:black;
 }

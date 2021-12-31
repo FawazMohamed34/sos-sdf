@@ -3,6 +3,10 @@
   background: #FDCEA9;
 }
 
+main {
+  z-index: 1;
+}
+
 body {
   background: #84A583;
 }
@@ -11,12 +15,16 @@ body {
   margin-bottom: -5px;
 }
 
-.event {
+.brand-bg-darken {
   background: #fdc395;
 }
 
+a {
+  text-decoration: none;
+}
+
 header {
-  background: rgba(83, 77, 77, 0.56);
+  background: rgba(83, 77, 77, 0.664);
   height: 90px;
 }
 
@@ -26,18 +34,12 @@ header .donation {
 }
 
 header a {
+  font-size: calc(1.5rem + .6vw);
   color: white;
-  text-decoration: none;
 }
 
 header a:hover {
   color: #FDCEA9;
-}
-
-.myNavigation {
-  padding: 0.5rem 1rem;
-  padding-left: 0;
-  display: block;
 }
 
 .brand {
@@ -49,7 +51,8 @@ header a:hover {
 }
 
 main .parallax {
-  background: url(images/parallax.jpg);
+  background: url(images/sansabri.jpg) no-repeat left bottom;
+  background-size: cover;
   height: 500px;
   background-attachment: fixed;
 }
@@ -58,18 +61,24 @@ main .parallax h1 {
   background: rgba(27, 26, 26, 0.95);
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 576px) {
   main .parallax {
-    background: url(images/parallax-md.jpg);
+    background: url(images/sansabri-sm.jpg) left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  main .parallax {
+    background: url(images/sansabri-md.jpg) left bottom;
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
   }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   main .parallax {
-    background: url(./images/parallax-lg.jpg) 30% 95%;
+    background: url(images/sansabri-lg.jpg) bottom;
     height: 600px;
     background-size: cover;
     background-attachment: fixed;
@@ -77,7 +86,8 @@ main .parallax h1 {
 }
 
 .myAlert {
-  background-color: #EA495F;
+  border-radius: 3rem;
+  background-color: #b8152b;
 }
 
 .myAlert:hover {
@@ -94,7 +104,57 @@ main .parallax h1 {
 }
 
 .hover-link:hover {
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #FDCEA9;
+}
+
+@media (max-width: 880px) {
+  .myNavbarCollapse {
+    z-index: 2;
+    background: rgba(83, 77, 77, 0.664);
+    margin-top: 12px;
+  }
+}
+
+.myNavigation {
+  padding: 0.5rem 1rem;
+  padding-left: 0;
+  display: block;
+}
+
+@media (max-width: 880px) {
+  .myNavigation {
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  .myNavigation:hover {
+    -webkit-box-shadow: rgba(46, 38, 38, 0.582) 5px 9px 5px;
+            box-shadow: rgba(46, 38, 38, 0.582) 5px 9px 5px;
+    color: #292424;
+  }
+}
+
+.event {
+  background: #fdc89f;
+}
+
+.footer-end {
+  color: white;
+  font-size: 0.8rem;
+}
+
+.bg-endFooter {
+  background-color: #333333;
+}
+
+.btn-event {
+  border-radius: 3rem;
+  background: seagreen;
+  color: white;
+}
+
+.mytitle-card {
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */

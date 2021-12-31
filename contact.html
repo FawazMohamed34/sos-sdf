@@ -5,24 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sans-Abri SOS</title>
+  <title>Document</title>
   <link rel="stylesheet" href="./node_modules/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 
 <body class="container-fluid">
   <header class="row m-0 p-md-0 fixed-top">
     <div class="col-12 g-0">
       <nav class="navbar navbar-expand-lg p-xl-2">
         <a href="index.html" class="navbar-brand brand ms-2 ms-lg-0">
-          <img src="images/ong.png" class="myNav shadow-lg" id="logo" alt="Sans-Abri-SOS">
+          <img src="images/ong.png" class="myNav shadow-lg" id="logo" alt="Sans Abri SOS">
         </a>
                       <!--When LARGE and more,screen  Change the ordre of  button "FAIRE UN DON" -->
         <a href="https://www.paypal.com/" class="btn order-lg-3 text-white donation">Faire un don</a>
 
         <button class="navbar-toggler btn me-2" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-three-dots"
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor" class="bi bi-three-dots "
             viewBox="0 0 16 16">
             <path
               d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
@@ -41,160 +42,78 @@
     </div>
   </header>
 
-
   <main>
-
-    <!--Parallax and h1-->
-
-    <div class="row parallax text-center text-white text-uppercase align-items-end align-items-md-center justify-content-center">
-      <!--Titre principal en bas du parallax jusqu'a MEDIUM puis au centre-->
-      <div class="col-10">
-        <h1 class="fs-2 font-monospace h1-color text-white d-inline">Un simple geste peut sauver, une vie.</h1>
+    <div class="title  row align-items-center justify-content-center">
+      <div class="col">
+        <h1 class="text-center display-1 fw-bold mt-5">Contact</h1>
       </div>
     </div>
 
     <section>
+      <div class="mt-5 brand-bg-darken container rounded">
 
-      <div class="row m-0 d-flex justify-content-center align-items-center fst-italic">
-        <!--3 articles en presentation -->
-        <div class="col-12 col-md-8 col-lg-4 text-center text-justify bg-transparent align-items-center">
-          <div class="card p-1 border-0  rounded bg-transparent">
-            <div class="card-body">
-              <img src="images/food.png" alt="Image de couverts">
-              <h2 class="card-title">Repas chaud</h2>
-              <p class="card-text p-1">Vos dons nous aident a <strong>nourrir</strong> un bon nombres de personne
-                qui souffrent de <strong> mal nutrition,</strong> duia nobis velit odit praesentium ipsa neque molestiae repudi</p>
+        <div class="row fst-italic align-items-center justify-content-center d-flex mb-5">
+
+          <div class="col col-lg-4 text-center pb-3 text-justify">
+            <div class="row-cols-1">
+              <h2 class="col fst-italic mt-4 mb-3">Nos Coordonnées</h2>
+              <div class="col p-3">
+                <img src="images/emplacement.png" alt="">
+                <p class="fst-italic mt-3 fs-5 lh-sm">
+                  134 rue des étoiles<br>
+                  <span class="">Montpellier 34080</span>
+                </p>
+              </div>
+
+              <!--card disponibilié-->
+              <div class="col">
+                <img src="images/emplacement.png" alt="">
+
+                <p class="fst-italic mt-3 fs-5">Tel : 01.02.03.04.05</p>
+                <p class="fs-6 text-muted">Appel Gratuit + prix d'un appel*</p>
+
+              </div>
+
+              <div class="col">
+                <img src="images/emplacement.png" alt="">
+                <p class="fst-italic mt-3 fs-5">adresse@monsite.fr</p>
+              </div>
+
+            </div>
+
+
+          </div>
+          <!--Formulaire de contact-->
+          <div class="col-12 col-lg-6">
+            <div class="row border border-light border-1 shadow-lg pt-5">
+              <h2 class="text-center fst-italic col-12">Envoyer un message</h2>
+              <form class="mt-5 d-flex flex-column align-items-center" action="#" method="get">
+                <div class="col-12 col-md-10 col-xl-8">
+                  <input type="text" class="form-control mt-2" placeholder="Nom" aria-label="Nom" required>
+                </div>
+                <div class="col-12 col-md-10 col-lg-10 col-xl-8">
+                  <input type="email" class="form-control mt-2" placeholder="Email" aria-label="Email" required>
+                </div>
+                <!--Objet et contenu du message-->
+                <div class="col-12 col-md-10 col-xl-8">
+                  <input type="text" class="form-control mt-2" placeholder="Objet (optionnel)" aria-label="Objet">
+                </div>
+                <div class="col-12 col-md-12 col-xl-12">
+                  <textarea class="form-control mt-3" placeholder="Message" aria-label="Message" style="height: 150px"
+                    required></textarea>
+                </div>
+                <div class="col-12 d-flex justify-content-center m-3">
+                  <input type="submit" class="btn btn-success">
+                </div>
+              </form>
             </div>
           </div>
-          <a href="https://www.paypal.com" class="d-lg-none btn btn-success text-dark">J'agis en faisant un don </a>
-        </div>
-
-        <div class="col-12 col-md-8 col-lg-4 text-center text-justify align-items-center">
-          <div class="card  p-1 border-0 rounded bg-transparent">
-            <div class="card-body">
-              <img src="images/community.png" alt="Image de personnes réunis">
-              <h2 class="card-title">Fraternité</h2>
-              <p class="card-text p-1">Notre association compte <strong> plus de 10 000 hommes et femmes
-                  volontaires</strong> un grand merci a tous les offrants,Lorem ipsum dolor sit amet,  natus error! umque enim eius itaque ea et?</p>
-            </div>
-          </div>
-          <a href="nousrejoindre.html" class="d-lg-none btn btn-success text-dark mt-3">Devenir membre</a>
-        </div>
-
-        <div class="col-12 col-md-8 col-lg-4  text-center text-justify">
-          <div class="card p-1 border-0 rounded bg-transparent">
-            <div class="card-body">
-              <img src="images/home.png" alt="Image d'une maison">
-              <h2 class="card-title">Accompagnement</h2>
-              <p class="card-text p-1">Proteger <strong> les plus démunis </strong>
-                tel est notre mission au quotidien partout en France,depuis plus de 10 ans, sunt dolores. Quibusdam  molestiae quos.</p>
-            </div>
-          </div>
-          <a href="apropos.html" class="d-lg-none btn btn-success text-dark">En savoir plus</a>
-        </div>
-
-      </div>
-
-    </section>
-    <!-- 3 CARD whithe  IMG-->
-    <section class="d-none container-fluid justify-content-around d-lg-flex mt-5">
-      <div class="row card-presentation mb-5">
-        <!--CARD "FAIRE UN DON"-->
-        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-          <a href="https://www.paypal.com/">
-            <div class="card bg-dark text-white shadow-lg hover" style="width: 18rem;">
-              <img src="images/lamanche.jpg" alt="Image d'un sans-abri faisant la manche">
-              <div class="card-img-overlay d-flex align-items-end justify-content-center">
-                <h2 class="card-title link text-dark">Nous donner</h2>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!--CARD "DEVENIR MEMBRE"-->
-        <div class="col-md-4 d-flex flex-column justify-content-center center align-items-center">
-          <a href="https://www.paypal.com/">
-            <div class="card bg-dark text-white shadow-lg hover" style="width: 18rem ;">
-              <img src="images/vivredanslarue.jpg" class="card-img" alt="Images d'un membre de l'association">
-              <div class="card-img-overlay d-flex justify-content-center align-items-end">
-                <h2 class="card-title link text-dark">Notre mission</h2>
-              </div>
-            </div>
-          </a>
-        </div>
-        <!--CARD "Notre Mission"-->
-        <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
-          <a href="https://www.paypal.com/">
-            <div class="card bg-dark text-white shadow-lg hover" style="width: 18rem;">
-              <img src="images/vivredanslarue.jpg" class="card-img" alt="Images d'une personne vivant a meme la route">
-              <div class="card-img-overlay d-flex justify-content-center align-items-end">
-                <h2 class="card-title link text-dark">Nous écrire</h2>
-              </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-    </section>
-
-    <!--H3 CITATION-->
-
-    <section>
-      <div class="row block p-2 mt-5 align-items-center text-center brand shadow">
-        <div class="col-12">
-          <blockquote cite="https://citation-celebre.leparisien.fr/citation/sdf">
-            <h3 class="display-4  p-1 fst-italic">
-              «On peut quelque soit la classe social devenir des sdf»
-            </h3>
-            <p class="display-6 fw-lighter">Diego-killer Étudiant, Congo, 1997 </p>
-          </blockquote>
         </div>
       </div>
     </section>
 
-    <!--Event-->  
-    <article>
-      <div class="container-fluid">
-      <div class="row justify-content-center mt-5">
-        <div class="col-12 text-center">
-          <h4 class="display-3 fw-lighter mb-3 mt-5 shadow-lg d-inline">Evenements</h4>
-        </div>
 
-        <!--First evenement-->
-          <div class="col-12 col-lg-7">
-            <div class="card mt-4 event shadow">
-              <div class="card-header text-muted shadow-lg">
-                Provence-Alpes-Côte d'Azur, le 29/12/2021
-              </div>
-              <div class="card-body">
-                <h5 class="card-title mb-3 fw-bold">Pêche a l'aimant </h5>
-                <p><span class="fw-bold">Lieu :</span>17 Place de , Marseille 13000 </p>
-                <p class="card-text"><span class="fw-bold">Description :</span> Les habitants du 5èmes arrondissement se
-                  rassemblent pour dépolluer les eaux </p>
-                <a href="evenements.html" class="btn btn-event">Voir plus d'evenements</a>
-              </div>
-            </div>
-          </div>
-        <!--Last evenement-->
-          <div class="col-12 col-lg-7">
-            <div class="card mt-4 event mb-5 shadow">
-              <div class="card-header text-muted shadow-lg">
-               Occitanie, le 16/02/2022
-              </div>
-              <div class="card-body">
-                <h5 class="card-title mb-3 fw-bold">Marathon d'hiver</h5>
-                <p class="card-text"><span class="fw-bold">Lieu :</span> Place de la bastille, Nimes 33010 </p>
-                <p class="card-text "><span class="fw-bold">Description :</span> Nouvelle édition du marathon de
-                  Paris,venez
-                  nombreux !</p>
-                <a href="evenements.html" class="btn btn-event">Voir plus d'evenements</a>
-              </div>
-            </div>
-          </div>
-      </div>
-    </div>
-  </article>
   </main>
-
   <!--Footer with social media for SMALL screen-->
   <footer>
     <nav class="d-md-none">
@@ -233,7 +152,9 @@
               </svg>
             </a>
           </div>
+
         </div>
+
       </div>
     </nav>
 
@@ -324,8 +245,6 @@
         </div>
 
       </footer>
-
-
 
 
     <footer>
