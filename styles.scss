@@ -31,6 +31,7 @@ body{
 a {
   text-decoration: none;;
 }
+
 header{
   background: $dark-transparent;
   height: 90px;
@@ -43,12 +44,12 @@ header{
   a{
     font-size: calc(1.5rem + .6vw);
     color:white;
+
      &:hover{
        color: $brand-color;
      }
   }
 }
-
 
 .brand{
   background: $brand-color;
@@ -150,4 +151,5 @@ font-size: 0.8rem;
 }
 .mytitle-card{
   color:black;
+
 }
