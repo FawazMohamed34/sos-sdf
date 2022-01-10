@@ -1,0 +1,23 @@
+{
+  "name": "sos-sdf",
+  "version": "1.0.0",
+  "description": "Realiser un site statique pour une association apportant une aide a des sans abris  Mobile first Responsive  Outils : Bootstrap  / Github / VS code / Adobe xd Minimun 2 pages : Une sur l'association elle meme, une autre portant sur des evenements",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FawazMohamed34/sos-sdf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FawazMohamed34/sos-sdf/issues"
+  },
+  "homepage": "https://github.com/FawazMohamed34/sos-sdf#readme"
+}
