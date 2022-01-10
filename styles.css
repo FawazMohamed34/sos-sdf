@@ -42,14 +42,6 @@ header a {
 header a:hover {
   color: #FDCEA9;
 }
-
-
-.myNavigation {
-  padding: 0.5rem 1rem;
-  padding-left: 0;
-  display: block;
-}
-
 .brand {
   background: #FDCEA9;
 }
@@ -70,6 +62,7 @@ main .parallax h1 {
 }
 
 @media screen and (min-width: 576px) {
+
   main .parallax {
     background: url(images/sansabri-sm.jpg) left;
   }
@@ -96,7 +89,6 @@ main .parallax h1 {
 .myAlert {
   border-radius: 3rem;
   background-color: #b8152b;
-
 }
 
 .myAlert:hover {
@@ -165,6 +157,5 @@ main .parallax h1 {
 
 .mytitle-card {
   color: black;
-
 }
 /*# sourceMappingURL=styles.css.map */
