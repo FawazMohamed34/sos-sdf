@@ -1,0 +1,5 @@
+User-agent: GooglesBot
+Disallow: confidentialites.html
+          conditions.html
+          cookies.html
+          mentionslegales.html
